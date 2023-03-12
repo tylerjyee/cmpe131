@@ -4,5 +4,3 @@ def palindrome(word):
         print("true")
     else:
         print("false")
-check_word = "racecar"
-palindrome(check_word)
