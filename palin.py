@@ -1,6 +1,5 @@
 def palindrome(word):
-    word == word[::-1]
-    if word:
-        print("true")
+    if(word == word[::-1]):
+        return("true")
     else:
-        print("false")
+        return("false")
