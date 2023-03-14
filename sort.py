@@ -1,4 +1,4 @@
-from operator import itemgetter
+"""from operator import itemgetter
 
 def sort_tup(t_dict):
     res = sorted(t_dict.values(), key=itemgetter(1))
@@ -6,4 +6,17 @@ def sort_tup(t_dict):
 
 t_dict = {"Sam": (1234567, 20), "Peter": (5567823, 32), "Alex": (8907346, 25)}
 d = sort_tup(t_dict)
-print(d)
+print(d)"""
+
+from operator import itemgetter
+t_dict = {"Sam": (1234567, 20), "Peter": (5567823, 32), "Alex": (8907346, 25)}
+d = dict(t_dict)
+
+def sort_tup(t_dict):
+    res = sorted(t_dict.values(), key=itemgetter(1))
+    for name, info in res.items():
+        ph, age = info
+        list_fin = [{name},{ph}]
+        return(list_fin)
+
+print(sort_tup(t_dict))
