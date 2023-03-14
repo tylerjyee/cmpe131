@@ -3,10 +3,12 @@ class Base:
         self.x = x
         self.y = y
         self.size = size
+    
     def draw(self):
-        return " "
+        return ""
+
 class Circle(Base):
-    def __init__(x, y, size):
+    def __init__(self, x, y, size):
         super().__init__(x,y,size)
     def draw(self):
         return f"""
@@ -17,8 +19,9 @@ class Circle(Base):
  ',       ,'
    ',___,'
 """
+
 class Square(Base):
-    def __init__(x, y, size):
+    def __init__(self, x, y, size):
         super().__init__(x,y,size)
     def draw(self):
         return f"""
@@ -35,6 +38,7 @@ class Square(Base):
 |                   |
 --------------------
 """
+
 # All of the code below is correct
 def draw_any_shape(myShape):
     print(myShape.draw())
