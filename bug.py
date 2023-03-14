@@ -20,7 +20,7 @@ class Circle(Base):
 class Square(Base):
     def __init__(x, y, size):
         super().__init__(x,y,size)
-    def draw():
+    def draw(self):
         return f"""
 ({self.x}, {self.y})
 {self.size}
