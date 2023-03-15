@@ -1,8 +1,7 @@
-from operator import itemgetter
-t_dict = {"Sam": (1234567, 20), "Peter": (5567823, 32), "Alex": (8907346, 25)}
-
-def sort_tup(t_dict):
-    res = sorted(t_dict.values(), key=itemgetter(1))
-
-print(sort_tup(t_dict))
-
+empty_list = []
+def sort_dictionary(providedDic: dict):
+    age_sort= sorted(providedDic.items(), key=lambda x: x[1][1])
+    
+    for name, value in age_sort:
+        empty_list.append((name, value[0]))
+    return empty_list
