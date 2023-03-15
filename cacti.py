@@ -1,8 +1,5 @@
-from cacti import cacti_number
-from calc import calculator
-
-def main():
-    plot = [ [1, 0, 1, 0, 1]
-            [0, 0, 0, 0, 0]
-            [1, 0, 0, 0, 0] ]
-    print(cacti_number(plot))
+def cacti_number(plot):
+    for i in range(len(plot)):
+        for j in range(len(plot[i])):
+            print(plot[i][j], end=' ')
+    print()
