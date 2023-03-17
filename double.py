@@ -4,4 +4,3 @@ def double(func):
         print("Let's try that again!")
         func()
     return inner_func
-@double
