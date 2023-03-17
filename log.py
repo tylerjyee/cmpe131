@@ -5,9 +5,3 @@ def timestamp(func):
         print(time.ctime())
         func()
     return inner
-
-@timestamp
-def message():
-    print("Hello Tyler!")
-
-message()
