@@ -1,5 +1,4 @@
-def palindrome(word):
-    if(word == word[::-1]):
-        return("true")
-    else:
-        return("false")
+def palindrome(test_list):
+    rev_list = list(reversed(test_list))
+    res = rev_list == test_list
+    return res
