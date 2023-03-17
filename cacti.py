@@ -22,4 +22,5 @@ def cacti_number(plot):
                         step = 0
                 if step == 1:
                     count += 1
+                    plot[x][y] = 1
     return count
